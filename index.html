@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <title>Poke Api</title>
+</head>
+<body>
+  <header>
+    <div class="image-container">
+      <a href="/index.html"><img class="poke-image" src="./img/pokeapi.png" alt="PokeApiImage"></a>
+    </div>
+  </header>
+  <div class="searchbar-container">
+    <div class="searchbar">
+      <input type="text" placeholder="Buscar pokemon...." />
+    </div>
+    <div class="searchbar-btn">
+      <button id="search-pokemon">Buscar</button>
+    </div>
+  </div>
+  <div class="pagination-container">
+    <div class="pagination-controls">
+      <button id="btn-previous">Anterior</button>
+      <input type="number" />
+      <button id="btn-next">Siguiente</button>
+    </div>
+  </div>
+  <div class="loading-container">
+    <div class="spinner"></div>
+    <h2>Cargando Pokemones....</h2>
+  </div>
+  <div id="pokemones">
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="app.js"></script>
+</body>
+</html>
